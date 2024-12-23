@@ -31,6 +31,10 @@ const Profile: React.FC<ProfileProps> = ({ user, onLogout }) => {
           <p className="text-xl">
             <strong>Bio:</strong> {user.bio}
           </p>
+          <a
+            href="https://api.whatsapp.com/send?phone=5583988031406&text=Eae,%20quero%20me%20graduar%20:)"
+            className="bg-white text-black px-10 py-3 rounded-xl hover:bg-white/90"
+          >Quero me Graduar!</a>
           <button
             onClick={onLogout}
             className="bg-white text-black px-10 py-3 rounded-xl hover:bg-white/90"
