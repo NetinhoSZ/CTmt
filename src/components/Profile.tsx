@@ -7,18 +7,22 @@ interface ProfileProps {
     faixa: string;
     avatar: string;
     bio: string;
+    backgroundImage: string;
   };
   onLogout: () => void;
 }
 
 const Profile: React.FC<ProfileProps> = ({ user, onLogout }) => {
+
+  const backgroundImageUrl = user.backgroundImage || `assets/images/background.jpg`;
+
   return (
-    <div className="w-full flex items-center justify-center mb-2" style={{ 
-      backgroundImage: "url('src/assets/images/background.jpg')",     
+    <div className="w-full flex items-center justify-center mb-2" style={{
+      backgroundImage: `url('${backgroundImageUrl}')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      minHeight: '100vh' }}>
-
+      minHeight: '100dvh', // Garantir que ocupe toda a altura da tela
+    }}>
       <div className="">
         <img
           src={user.avatar}

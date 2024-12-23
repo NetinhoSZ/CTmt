@@ -11,6 +11,7 @@ import BandanaAzul from "./assets/images/BandanaAzul.jpg"
 import BandanaRoxa from "./assets/images/BandanaRoxa.jpg"
 import BandanaMarrom from "./assets/images/BandanaMarrom.jpg"
 import BandanaPreta from "./assets/images/BandanaPreta.jpg"
+import Background from "./assets/images/background.jpg"
 
 // Tipo para o usuário
 interface User {
@@ -20,6 +21,7 @@ interface User {
   faixa: "Branca" | "Vermelha" | "Amarela" | "Laranja" | "Verde" | "Azul" | "Roxa" | "Marrom" | "Preta";
   avatar: string;
   bio: string;
+  backgroundImage: string;
 }
 
 // Mapeamento de faixa para avatar
@@ -45,6 +47,7 @@ const App: React.FC = () => {
         faixa: "Branca",
         avatar: faixaToAvatarMap["Branca"], // Avatar dinâmico com base na faixa
         bio: "Eu sou o administrador do sistema.",
+        backgroundImage: Background
       },
       {
         username: "Jhon",
@@ -53,6 +56,7 @@ const App: React.FC = () => {
         faixa: "Branca",
         avatar: faixaToAvatarMap["Branca"], // Avatar dinâmico com base na faixa
         bio: "Eu sou um visitante.",
+        backgroundImage: Background
       },
       {
         username: "Eliandro",
@@ -61,6 +65,7 @@ const App: React.FC = () => {
         faixa: "Branca",
         avatar: faixaToAvatarMap["Branca"], // Avatar dinâmico com base na faixa
         bio: "Eu sou um visitante.",
+        backgroundImage: Background
       },
       {
         username: "Davi",
@@ -69,6 +74,7 @@ const App: React.FC = () => {
         faixa: "Branca",
         avatar: faixaToAvatarMap["Branca"], // Avatar dinâmico com base na faixa
         bio: "Eu sou um visitante.",
+        backgroundImage: Background
       },
     ]
   );
