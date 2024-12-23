@@ -14,7 +14,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
   };
 
   return (
-    <div className="w-full h-full flex items-center justify-center text-center mt-[50%] md:mt-[18%]">
+    <div className="w-full h-full flex items-center justify-center text-center mt-[50%] md:mt-[15%]">
       <div className="max-w-full h-full bg-white p-10 rounded-xl">
         <h1 className="w-full text-black mb-10">Login</h1>
         <form className="w-full h-full flex flex-col gap-5" onSubmit={handleSubmit}>
