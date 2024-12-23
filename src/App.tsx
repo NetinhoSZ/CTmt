@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/Login";
 import Profile from "./components/Profile"; 
-import BandanaBranca from "./assets/images/BandanaBranca.jpg"
-import BandanaVermelha from "./assets/images/BandanaVermelha.jpg"
-import BandanaAmarela from "./assets/images/BandanaAmarela.jpg"
-import BandanaLaranja from "./assets/images/BandanaLaranja.jpg"
-import BandanaVerde from "./assets/images/BandanaVerde.jpg"
-import BandanaAzul from "./assets/images/BandanaAzul.jpg"
-import BandanaRoxa from "./assets/images/BandanaRoxa.jpg"
-import BandanaMarrom from "./assets/images/BandanaMarrom.jpg"
-import BandanaPreta from "./assets/images/BandanaPreta.jpg"
+import BandanaBranca from "./assets/images/BandanaBranca.png"
+import BandanaVermelha from "./assets/images/BandanaVermelha.png"
+import BandanaAmarela from "./assets/images/BandanaAmarela.png"
+import BandanaLaranja from "./assets/images/BandanaLaranja.png"
+import BandanaVerde from "./assets/images/BandanaVerde.png"
+import BandanaAzul from "./assets/images/BandanaAzul.png"
+import BandanaRoxa from "./assets/images/BandanaRoxa.png"
+import BandanaMarrom from "./assets/images/BandanaMarrom.png"
+import BandanaPreta from "./assets/images/BandanaPreta.png"
 import Background from "./assets/images/background.jpg"
 
 // Tipo para o usuário
