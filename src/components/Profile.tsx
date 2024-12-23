@@ -17,18 +17,20 @@ const Profile: React.FC<ProfileProps> = ({ user, onLogout }) => {
   const backgroundImageUrl = user.backgroundImage || `assets/images/background.jpg`;
 
   return (
-    <div className="w-full flex items-center justify-center mb-2" style={{
+    <div className="w-full h-full" style={{
       backgroundImage: `url('${backgroundImageUrl}')`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
+      backgroundPosition: 'top left',
       minHeight: '100dvh', // Garantir que ocupe toda a altura da tela
     }}>
-      <div className="">
-        <img
-          src={user.avatar}
-          alt="Avatar"
-          className=""
-        />
+      <div className="w-full h-full">
+        <div className="w-full h-full flex items-start justify-start">
+          <img
+            src={user.avatar}
+            alt="Avatar"
+            className="mb-5"
+          />
+        </div>
         <div className="flex flex-col items-center justify-center text-center gap-[22px]">
           <p className="text-3xl">Bem-vindo, {user.username}!</p>
           <p className="text-3xl">
