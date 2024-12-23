@@ -65,7 +65,7 @@ const App: React.FC = () => {
       {
         username: "Davi",
         password: "davi123",
-        fullName: "José Davi",
+        fullName: "Davi silva",
         faixa: "Branca",
         avatar: faixaToAvatarMap["Branca"], // Avatar dinâmico com base na faixa
         bio: "Eu sou um visitante.",
