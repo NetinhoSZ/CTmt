@@ -15,15 +15,15 @@ interface User {
 
 // Mapeamento de faixa para avatar
 const faixaToAvatarMap: Record<User["faixa"], string> = {
-  Branca: "public/BandanaBranca.jpg",
-  Vermelha: "public/BandanaVermelha.jpg",
-  Amarela: "public/BandanaAmarela.jpg",
-  Laranja: "public/BandanaLaranja.jpg",
-  Verde: "public/BandanaVerde.jpg",
-  Azul: "public/BandanaAzul.jpg",
-  Roxa: "public/BandanaRoxa.jpg",
-  Marrom: "public/BandanaMarrom.jpg",
-  Preta: "public/BandanaPreta.jpg",
+  Branca: "public/static/images/BandanaBranca.jpg",
+  Vermelha: "public/static/images/BandanaVermelha.jpg",
+  Amarela: "public/static/images/BandanaAmarela.jpg",
+  Laranja: "public/static/images/BandanaLaranja.jpg",
+  Verde: "public/static/images/BandanaVerde.jpg",
+  Azul: "public/static/images/BandanaAzul.jpg",
+  Roxa: "public/static/images/BandanaRoxa.jpg",
+  Marrom: "public/static/images/BandanaMarrom.jpg",
+  Preta: "public/static/images/BandanaPreta.jpg",
 };
 
 const App: React.FC = () => {
