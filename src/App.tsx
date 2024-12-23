@@ -12,6 +12,7 @@ import BandanaRoxa from "./assets/images/BandanaRoxa.png"
 import BandanaMarrom from "./assets/images/BandanaMarrom.png"
 import BandanaPreta from "./assets/images/BandanaPreta.png"
 import Background from "./assets/images/background.jpg"
+import BackgroundNeto from "./assets/images/backgroundNeto.jpg"
 
 // Tipo para o usuário
 interface User {
@@ -47,7 +48,7 @@ const App: React.FC = () => {
         faixa: "Branca",
         avatar: faixaToAvatarMap["Branca"], // Avatar dinâmico com base na faixa
         bio: "Eu sou o administrador do sistema.",
-        backgroundImage: Background
+        backgroundImage: BackgroundNeto
       },
       {
         username: "Jhon",
