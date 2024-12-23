@@ -13,7 +13,12 @@ interface ProfileProps {
 
 const Profile: React.FC<ProfileProps> = ({ user, onLogout }) => {
   return (
-    <div className="w-full flex items-center justify-center mb-2">
+    <div className="w-full flex items-center justify-center mb-2" style={{ 
+      backgroundImage: "url('src/assets/images/background.jpg')",     
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      minHeight: '100vh' }}>
+
       <div className="">
         <img
           src={user.avatar}
