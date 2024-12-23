@@ -45,8 +45,8 @@ const App: React.FC = () => {
         username: "Neto",
         password: "netinhos123",
         fullName: "José Neto",
-        faixa: "Branca",
-        avatar: faixaToAvatarMap["Branca"], // Avatar dinâmico com base na faixa
+        faixa: "Vermelha",
+        avatar: faixaToAvatarMap["Vermelha"], // Avatar dinâmico com base na faixa
         bio: "Eu sou o administrador do sistema.",
         backgroundImage: BackgroundNeto
       },
@@ -54,8 +54,8 @@ const App: React.FC = () => {
         username: "Jhon",
         password: "jhon123",
         fullName: "Jhon Victor",
-        faixa: "Branca",
-        avatar: faixaToAvatarMap["Branca"], // Avatar dinâmico com base na faixa
+        faixa: "Vermelha",
+        avatar: faixaToAvatarMap["Vermelha"], // Avatar dinâmico com base na faixa
         bio: "Eu sou um visitante.",
         backgroundImage: Background
       },
