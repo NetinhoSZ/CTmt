@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/Login";
-import Profile from "./components/Profile";
+import Profile from "./components/Profile"; 
+import BandanaBranca from "./assets/images/BandanaBranca.jpg"
+import BandanaVermelha from "./assets/images/BandanaVermelha.jpg"
+import BandanaAmarela from "./assets/images/BandanaAmarela.jpg"
+import BandanaLaranja from "./assets/images/BandanaLaranja.jpg"
+import BandanaVerde from "./assets/images/BandanaVerde.jpg"
+import BandanaAzul from "./assets/images/BandanaAzul.jpg"
+import BandanaRoxa from "./assets/images/BandanaRoxa.jpg"
+import BandanaMarrom from "./assets/images/BandanaMarrom.jpg"
+import BandanaPreta from "./assets/images/BandanaPreta.jpg"
 
 // Tipo para o usuário
 interface User {
@@ -15,15 +24,15 @@ interface User {
 
 // Mapeamento de faixa para avatar
 const faixaToAvatarMap: Record<User["faixa"], string> = {
-  Branca: "/static/images/BandanaBranca.jpg",
-  Vermelha: "/static/images/BandanaVermelha.jpg",
-  Amarela: "/static/images/BandanaAmarela.jpg",
-  Laranja: "/static/images/BandanaLaranja.jpg",
-  Verde: "/static/images/BandanaVerde.jpg",
-  Azul: "/static/images/BandanaAzul.jpg",
-  Roxa: "/static/images/BandanaRoxa.jpg",
-  Marrom: "/static/images/BandanaMarrom.jpg",
-  Preta: "/static/images/BandanaPreta.jpg",
+  Branca: BandanaBranca,
+  Vermelha: BandanaVermelha,
+  Amarela: BandanaAmarela,
+  Laranja: BandanaLaranja,
+  Verde: BandanaVerde,
+  Azul: BandanaAzul,
+  Roxa: BandanaRoxa,
+  Marrom: BandanaMarrom,
+  Preta: BandanaPreta,
 };
 
 const App: React.FC = () => {
