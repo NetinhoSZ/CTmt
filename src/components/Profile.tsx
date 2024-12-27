@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 
 // Definição do tipo da propriedade para o Profile
 interface ProfileProps {
@@ -23,13 +22,7 @@ interface ProfileProps {
 }
 
 const Profile: React.FC<ProfileProps> = ({ user, onLogout, users }) => {
-  const [selectedUser, setSelectedUser] = useState<string>("");
   const backgroundImageUrl = user.backgroundImage || `assets/images/background.jpg`;
-
-  // Função para lidar com a mudança do dropdown
-  const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedUser(event.target.value);
-  };
 
   return (
     <div
@@ -68,33 +61,21 @@ const Profile: React.FC<ProfileProps> = ({ user, onLogout, users }) => {
           </button>
         </div>
 
-        {/* Dropdown para exibição de todos os perfis */}
+        {/* Exibição de todos os perfis */}
         <div className="w-full flex flex-col items-center justify-center max-w-xs mt-10 mb-2">
           <h2 className="text-2xl text-center mb-5 text-white">Todos os perfis:</h2>
-          <select
-            value={selectedUser}
-            onChange={handleSelectChange}
-            className="bg-white text-black px-4 py-2 rounded-xl mb-2"
-          >
-            <option value="">Selecione um perfil</option>
+          <div className="flex flex-wrap justify-center gap-4">
             {users.map((profileUser) => (
-              <option key={profileUser.username} value={profileUser.username}>
-                {profileUser.fullName}
-              </option>
+              <div key={profileUser.username} className="flex flex-col items-center">
+                <img
+                  src={profileUser.avatar}
+                  alt={profileUser.fullName}
+                  className="w-16 h-16 rounded-full"
+                />
+                <p className="text-white text-sm mt-2">{profileUser.fullName}</p>
+              </div>
             ))}
-          </select>
-
-          {/* Link para o perfil selecionado */}
-          {selectedUser && (
-            <div className="mt-4 mb-2">
-              <Link
-                to={`/users/${selectedUser}`}
-                className="bg-white text-black px-10 py-3 rounded-xl hover:bg-white/90"
-              >
-                Ver Perfil
-              </Link>
-            </div>
-          )}
+          </div>
         </div>
       </div>
     </div>
